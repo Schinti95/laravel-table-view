@@ -16,7 +16,7 @@
 		</button>
 
 		<div class="pull-right">
-			<label>Search:
+			<label>Suchen:
 				<input id="search-form-input" class="search-form-input" type="search" name="q" value="{{ Request::get('q') }}">
 			</label>
 		</div>

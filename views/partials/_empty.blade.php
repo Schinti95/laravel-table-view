@@ -1,4 +1,4 @@
 
 <div class="jumbotron bg-white">
-	<h3 class="text-danger text-center">No Results...</h3>
+	<h3 class="text-danger text-center">Keine Ergebnisse...</h3>
 </div>

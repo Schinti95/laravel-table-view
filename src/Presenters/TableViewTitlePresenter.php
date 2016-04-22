@@ -30,13 +30,13 @@ class TableViewTitlePresenter
      */
 	private static function titleWithTableFilters( $modelName, $dataCollectionSize )
 	{
-		$title = $dataCollectionSize > 0 ? number_format($dataCollectionSize) : 'No';
+		$title = $dataCollectionSize > 0 ? number_format($dataCollectionSize) : 'kein';
 
 		if ( ! Request::has('q') )
 		{
 			return $title . ' Total ' . $modelName;
 		}
 
-		return $title . ' ' . $modelName . ' found by searching ' . Request::get('q');
+		return $title . ' ' . $modelName . ' gefunden während nach ' . Request::get('q') . 'gesucht wurde.';
 	}
 }
