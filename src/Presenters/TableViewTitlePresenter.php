@@ -13,12 +13,12 @@ class TableViewTitlePresenter
      */
 	public static function formattedTitle( $laravelTableView, $dataCollectionSize )
 	{
-		$modelName = $laravelTableView->name();
+		$modelName = $laravelTableView->nameToShow();
 
-		if ( $dataCollectionSize !== 1 )
-		{
-			$modelName = str_plural( $modelName );
-		}
+		//if ( $dataCollectionSize !== 1 )
+		//{
+		//	$modelName = str_plural( $modelName );
+		//}
 
 		return self::titleWithTableFilters( $modelName, $dataCollectionSize );
 	}
