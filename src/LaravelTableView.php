@@ -163,7 +163,7 @@ class LaravelTableView
 	/**
      * @param string $name
      */
-	public function nameToShow($name)
+	public function setnameToShow($name)
 	{
 		$this->tableNameToShow = $name; 
 	}
