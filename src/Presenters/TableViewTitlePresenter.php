@@ -34,9 +34,9 @@ class TableViewTitlePresenter
 
 		if ( ! Request::has('q') )
 		{
-			return $title . ' Total ' . $modelName;
+			return $title . " " . $modelName . ' gesamt';
 		}
 
-		return $title . ' ' . $modelName . ' gefunden während nach ' . Request::get('q') . 'gesucht wurde.';
+		return $title . ' ' . $modelName . ' gefunden während nach >' . Request::get('q') . '< gesucht wurde.';
 	}
 }

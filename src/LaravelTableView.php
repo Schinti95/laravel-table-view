@@ -58,6 +58,11 @@ class LaravelTableView
      * @var string
      */
 	private $tableName;
+	
+	/**
+     * @var string
+     */
+	private $tableNameToShow;
 
 	/**
 	 * @return void
@@ -146,6 +151,21 @@ class LaravelTableView
 	public function name()
 	{
 		return $this->tableName;
+	}
+	/**
+     * @return string
+     */
+	public function nameToShow()
+	{
+		return $this->tableNameToShow;
+	}
+	
+	/**
+     * @param string $name
+     */
+	public function nameToShow($name)
+	{
+		$this->tableNameToShow = $name; 
 	}
 
 	/**
